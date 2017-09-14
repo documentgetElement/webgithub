@@ -1,324 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <style type="text/css">
-            *{padding: 0;margin: 0;}
-            html body{
-                background: black;
-            }
-            .box1{
-                width: 600px;
-                height: 400px;
-                background: white;
-                border: 5px solid black;
-                margin-left: 0px;
-                margin-top: 100px;
-                border-radius: 0px 100%;
-                position: relative;
-                transform: rotate(-15deg);
-                overflow: hidden;
-                float: left;
-            }
-            .box2{
-                width: 600px;
-                height: 400px;
-                background: white;
-                border: 5px solid black;
-                margin-left: 0px;
-                margin-top: 100px;
-                border-radius: 100% 0px;
-                position: relative;
-                transform: rotate(15deg);
-                overflow: hidden;
-                float: right;
-            }
-            .xielunyan{
-                width: 200px;
-                height: 200px;
-                background: black;
-                border-radius: 50%;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-left: -100px;
-                margin-top: -100px;
-                box-shadow: 0px 0px 10px 10px #333;
-            }
-            .box1 .xielunyan{
-                animation: run1 3s infinite linear;
-            }
-            .box2 .xielunyan{
-                animation: run 3s infinite linear;
-            }
-            .tongkong{
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background: black;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-top: -25px;
-                margin-left: -25px;
-            }
-            .xing1,.xing2,.xing3{
-                width: 138px;
-                height: 138px;
-                border-radius: 100% 0px;
-                border: 2px black solid;
-                background: #b10a0a;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-top: -70px;
-                margin-left: -70px;
-                opacity: 0.6;
-                filter: alpha(opacity=60);
-            }
-            .xing2{
-                transform: rotate(60deg);
-            }
-            .xing3{
-                transform: rotate(120deg);
-            }
-            .quan1{
-                width: 300px;
-                height: 300px;
-                border: 2px solid black;
-                border-radius: 50%;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-top: -150px;
-                margin-left: -150px;
-            }
-            .box1 .quan1{
-                animation: run 3s infinite linear;
-            }
-            .box2 .quan1{
-                animation: run1 3s infinite linear;
-            }
-            .quan2{
-                width: 420px;
-                height: 420px;
-                border: 2px solid black;
-                border-radius: 50%;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-top: -210px;
-                margin-left: -210px;
-                animation: run 3s infinite linear;
-
-            }
-            .box1 .quan2{
-                animation: run 3s infinite linear;
-            }
-            .box2 .quan2{
-                animation: run1 3s infinite linear;
-            }
-            .quan3{
-                width: 520px;
-                height: 520px;
-                border: 2px solid black;
-                border-radius: 50%;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-top: -260px;
-                margin-left: -260px;
-                animation: run 3s infinite linear;
-
-            }
-            .box1 .quan3{
-                animation: run 3s infinite linear;
-            }
-            .box2 .quan3{
-                animation: run1 3s infinite linear;
-            }
-            span{
-                display: block;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                position: absolute;
-            }
-            .up{
-                width: 30px;
-                height: 30px;
-                background: black;
-                left: -15px;
-                top: 0px;
-            }
-            .down{
-                background: white;
-                left: -10px;
-                bottom: 0px;
-            }
-            .dou1,.dou2,.dou3{
-                width: 20px;
-                height: 40px;
-                background: black;
-                border-radius: 0px 20px 20px 0px;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                margin-top: -20px;
-                margin-left: -10px;
-            }
-            .quan1 .dou1{
-                transform: rotate(120deg) translateX(160px);
-            }
-            .quan1 .dou2{
-                transform: rotate(240deg) translateX(160px);
-            }
-            .quan1 .dou3{
-                transform: rotate(360deg) translateX(160px);
-            }
-            .quan2 .dou1{
-                transform: rotate(60deg) translateX(220px);
-            }
-            .quan2 .dou2{
-                transform: rotate(180deg) translateX(220px);
-            }
-            .quan2 .dou3{
-                transform: rotate(300deg) translateX(220px);
-            }
-            .quan3 .dou1{
-                transform: rotate(120deg) translateX(270px);
-            }
-            .quan3 .dou2{
-                transform: rotate(240deg) translateX(270px);
-            }
-            .quan3 .dou3{
-                transform: rotate(360deg) translateX(270px);
-            }
-            @keyframes run{
-                from{}
-                to{transform: rotate(360deg);}
-            }
-            @keyframes run1{
-                from{}
-                to{transform: rotate(-360deg);}
-            }
-        </style>
-    </head>
-    <body>
-        <!--左眼-->
-        <div class="box1">
-            <div class="yankuang">
-                <!--轮回眼-->
-                <div class="lunhuiyan">
-                    <div class="quan1">
-                        <div class="dou1">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou2">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou3">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                    </div>
-                    <div class="quan2">
-                        <div class="dou1">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou2">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou3">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                    </div>
-                    <div class="quan3">
-                        <div class="dou1">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou2">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou3">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                    </div>
-                </div>
-                <!--写轮眼-->
-                <div class="xielunyan">
-                    <div class="xing1"></div>
-                    <div class="xing2"></div>
-                    <div class="xing3"></div>
-                    <div class="tongkong"></div>
-                </div>
-            </div>
-        </div>
-        <!--右眼-->
-        <div class="box2">
-            <div class="yankuang">
-                <!--轮回眼-->
-                <div class="lunhuiyan">
-                    <div class="quan1">
-                        <div class="dou1">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou2">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou3">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                    </div>
-                    <div class="quan2">
-                        <div class="dou1">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou2">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou3">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                    </div>
-                    <div class="quan3">
-                        <div class="dou1">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou2">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                        <div class="dou3">
-                            <span class="down"></span>
-                            <span class="up"></span>
-                        </div>
-                    </div>
-                </div>
-                <!--写轮眼-->
-                <div class="xielunyan">
-                    <div class="xing1"></div>
-                    <div class="xing2"></div>
-                    <div class="xing3"></div>
-                    <div class="tongkong"></div>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+<!-- saved from url=(0051)http://www.spielzeugz.de/html5/liquid-particles-3D/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Liquid Particles 3D | spielzeugz.de/lab </title>
+	<meta name="description" content="HTML5 Demo, particles trapped in a sphere.">
+	<meta name="keywords" content="html5,canvas,javascript,particles,interactive,velocity,programming,flash">
+	<style>
+		*{ 
+			margin:0;
+			padding:0;
+		}
+		body{
+			background-color:#000000;
+			overflow:hidden;
+		}
+	</style>	
+  </head>
+  <body>
+	<canvas id="mainCanvas" width="1920" height="974"></canvas>
+	<div id="output"></div>    
+	<script>
+(function(){function w(){h.globalCompositeOperation="source-over";h.fillStyle="rgba(8,8,12,"+v+")";h.fillRect(0,0,f,k);h.globalCompositeOperation="lighter";.75>v&&(v+=.05);D=s-x;E=t-y;x=s;y=t;for(var a=f/1.15,l=f/8,p=f/2,r=Math.random,F=Math.abs,w=Math.sqrt,A=Math.cos,B=Math.sin,C=Math.atan2,G=1350;G--;){var e=H[G],g=e.x,c=e.y,d=e.vX,b=e.vY,q=g-s,m=c-t,n=w(q*q+m*m),m=C(m,q),q=A(m),m=B(m);if(z&&n<p)var u=14*(1-n/p),d=d+(q*u+.5-r()),b=b+(m*u+.5-r());n<a&&(u=(1-n/a)*f*.0014,d-=q*u,b-=m*u);n<l&&(n=(1-
+n/l)*f*2.2E-4,d+=D*n,b+=E*n);d*=.96;b*=.96;F(d);F(b);g+=d;c+=b;g>f?g-=f:0>g&&(g=f+g);c>k?c-=k:0>c&&(c=k+c);e.vX=d;e.vY=b;e.x=g;e.y=c;d=e;b=g/f*Math.PI*2;c=c/k*Math.PI;b={theta:b,phi:c,x:-100*Math.sin(c)*Math.sin(b),y:-100*Math.cos(c),z:-100*Math.sin(c)*Math.cos(b)};d.pos3D=b;e.pos3D.z-=200;-299>e.pos3D.z||(d=300/(300+e.pos3D.z),b=e.pos3D.x*d+f/2,c=e.pos3D.y*d+k/2,h.fillStyle=e.color,h.beginPath(),h.arc(b,c,d,0,I,!0),h.closePath(),h.fill())}}function r(a){f=document.documentElement.clientWidth;k=document.documentElement.clientHeight;
+p.width=f;p.height=k}function A(a){a=a?a:window.event;s=x=a.pageX;t=y=a.pageY;document.onmousemove=B}function B(a){a=a?a:window.event;s=a.pageX;t=a.pageY}function C(a){z=!0;return!1}function J(a){return z=!1}function K(){this.color="rgb("+Math.floor(255*Math.random())+","+Math.floor(255*Math.random())+","+Math.floor(255*Math.random())+")";this.size=this.vY=this.vX=this.x=this.y=0;this.pos3D={x:0,y:0,z:100}}var p,h,f=1E3,k=560,H=[],I=2*Math.PI,v=0,s,t,D=0,E=0,x=0,y=0,z=!1;window.onload=function(){p=
+document.getElementById("mainCanvas");if(p.getContext){document.getElementById("outer");document.getElementById("canvasContainer");h=p.getContext("2d");window.moveTo(0,0);window.resizeTo(screen.width,screen.height);r(null);for(var a=1350;a--;){var l=new K;l.x=.5*f;l.y=.5*k;l.vX=Math.cos(a)*Math.random()*40;l.vY=Math.sin(a)*Math.random()*20;l.size=2;H[a]=l}document.onmousedown=C;document.onmouseup=J;document.onmousemove=A;window.onresize=r;r(null);setInterval(w,33)}}})();
+    </script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Liquid Particles 3D _ spielzeugz.de_lab_files/ga.js.下载" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11054609-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>		
+  
+</body></html>
